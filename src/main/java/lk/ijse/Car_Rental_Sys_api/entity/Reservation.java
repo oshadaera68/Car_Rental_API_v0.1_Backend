@@ -17,13 +17,14 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @Data
 @ToString
+
 @Entity
-public class GuestUser {
+public class Reservation {
     @Id
-    private String guestId;
-    private String name;
-    private String nic;
-    private String address;
-    private String contact;
-    private String email;
+    private String resId;
+    private String registerDate;
+    private String returnDate;
+    private int numberOfDays;
+    private String cancellationDetails;
+    private String pickUpDate;
 }

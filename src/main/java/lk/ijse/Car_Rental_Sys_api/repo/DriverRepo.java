@@ -5,5 +5,8 @@
 
 package lk.ijse.Car_Rental_Sys_api.repo;
 
-public interface DriverRepo {
+import lk.ijse.Car_Rental_Sys_api.entity.Driver;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface DriverRepo extends JpaRepository<Driver,String> {
 }

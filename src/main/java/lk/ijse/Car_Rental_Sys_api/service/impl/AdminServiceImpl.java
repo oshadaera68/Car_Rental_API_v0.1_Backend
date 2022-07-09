@@ -5,5 +5,7 @@
 
 package lk.ijse.Car_Rental_Sys_api.service.impl;
 
-public class AdminServiceImpl {
+import lk.ijse.Car_Rental_Sys_api.service.AdminService;
+
+public class AdminServiceImpl implements AdminService {
 }

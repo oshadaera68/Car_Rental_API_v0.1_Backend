@@ -14,11 +14,11 @@ import lombok.ToString;
 @NoArgsConstructor
 @Data
 @ToString
-public class RegisterUserDto {
-    private String guestId;
-    private String name;
-    private String nic;
-    private String address;
-    private String contact;
-    private String email;
+public class ReservationDto {
+    private String resId;
+    private String registerDate;
+    private String returnDate;
+    private int numberOfDays;
+    private String cancellationDetails;
+    private String pickUpDate;
 }
