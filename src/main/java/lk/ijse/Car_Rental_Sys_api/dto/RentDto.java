@@ -5,6 +5,21 @@
 
 package lk.ijse.Car_Rental_Sys_api.dto;
 
-public class RentDto {
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@ToString
+public class RentDto {
+    private String rentId;
+    private String paymentMethod;
+    private String paymentDate;
+    private int damagesCompensiation;
+    private double refund;
+    private double downPayment;
+    private double totalPayment;
 }
