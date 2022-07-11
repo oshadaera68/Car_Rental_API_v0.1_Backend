@@ -2,17 +2,19 @@ package lk.ijse.Car_Rental_Sys_api.service.impl;
 
 import lk.ijse.Car_Rental_Sys_api.dto.CarDto;
 import lk.ijse.Car_Rental_Sys_api.dto.RegisterUserDto;
-import lk.ijse.Car_Rental_Sys_api.entity.Car;
-import lk.ijse.Car_Rental_Sys_api.entity.Driver;
 import lk.ijse.Car_Rental_Sys_api.entity.RegisterUser;
 import lk.ijse.Car_Rental_Sys_api.repo.RegisterUserRepo;
 import lk.ijse.Car_Rental_Sys_api.service.RegisterUserService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
+@Service
+@Transactional
 public class RegisterUserServiceImpl implements RegisterUserService {
 
     @Autowired
