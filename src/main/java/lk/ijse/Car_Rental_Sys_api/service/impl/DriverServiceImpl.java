@@ -32,7 +32,7 @@ public class DriverServiceImpl implements DriverService {
         if (!repo.existsById(dto.getId())) {
             repo.save(map1.map(dto, Driver.class));
         } else {
-            throw new RuntimeException("This customer id is already exists....!!!");
+            throw new RuntimeException("This Driver id is already exists....!!!");
         }
     }
 
@@ -41,7 +41,7 @@ public class DriverServiceImpl implements DriverService {
         if (repo.existsById(dto.getId())) {
             repo.save(map1.map(dto, Driver.class));
         } else {
-            throw new RuntimeException("This customer id is already exists....!!!");
+            throw new RuntimeException("This Driver id is already exists....!!!");
         }
     }
 
@@ -50,7 +50,7 @@ public class DriverServiceImpl implements DriverService {
         if (repo.existsById(id)) {
             repo.deleteById(id);
         } else {
-            throw new RuntimeException("Empty Customer...!");
+            throw new RuntimeException("Empty Driver...!");
         }
     }
 
@@ -59,7 +59,7 @@ public class DriverServiceImpl implements DriverService {
         if (repo.existsById(id)) {
             return map1.map(repo.findById(id).get(), DriverDto.class);
         } else {
-            throw new RuntimeException("No Customer For " + id + " ..!");
+            throw new RuntimeException("No Driver For " + id + " ..!");
         }
     }
 
