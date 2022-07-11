@@ -15,7 +15,7 @@ import lombok.ToString;
 @Data
 @ToString
 public class ResponseUtil {
-    private int code;
+    private int code; //status code 200/400/404
     private String message;
     private Object data;
 }
