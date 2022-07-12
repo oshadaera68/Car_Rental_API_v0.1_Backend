@@ -1,6 +1,7 @@
 package lk.ijse.Car_Rental_Sys_api.service.impl;
 
 import lk.ijse.Car_Rental_Sys_api.dto.CarDto;
+import lk.ijse.Car_Rental_Sys_api.dto.DriverDto;
 import lk.ijse.Car_Rental_Sys_api.dto.RegisterUserDto;
 import lk.ijse.Car_Rental_Sys_api.entity.RegisterUser;
 import lk.ijse.Car_Rental_Sys_api.repo.RegisterUserRepo;
@@ -62,7 +63,7 @@ public class RegisterUserServiceImpl implements RegisterUserService {
 
     @Override
     public List<RegisterUserDto> getAllRegUsers() {
-        return map3.map(repo.findAll(), new TypeToken<List<CarDto>>() {
+        return map3.map(repo.findAll(), new TypeToken<List<DriverDto>>() {
         }.getType());
     }
 }

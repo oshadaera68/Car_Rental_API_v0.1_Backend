@@ -28,6 +28,8 @@ class AdminServiceTest {
 
     @Test
     void updateAdmin() {
+        Admin admin = new Admin("A001","nimesh","ahangama","071");
+        adminRepo.save(admin);
     }
 
     @Test
