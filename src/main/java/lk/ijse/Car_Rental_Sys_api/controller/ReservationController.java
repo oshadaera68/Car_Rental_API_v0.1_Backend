@@ -1,8 +1,6 @@
 package lk.ijse.Car_Rental_Sys_api.controller;
 
-import lk.ijse.Car_Rental_Sys_api.dto.AdminDto;
 import lk.ijse.Car_Rental_Sys_api.dto.ReservationDto;
-import lk.ijse.Car_Rental_Sys_api.service.AdminService;
 import lk.ijse.Car_Rental_Sys_api.service.ReservationService;
 import lk.ijse.Car_Rental_Sys_api.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -37,5 +37,4 @@ public class AdminController {
     public ResponseUtil searchAdmin(@PathVariable String id) {
         return new ResponseUtil(200, "OK", adminService.searchAdmin(id));
     }
-
 }
