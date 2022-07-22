@@ -1,0 +1,63 @@
+#bg-image{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/model-3.jpg");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    height: 65px;
+    width: 100%;
+    font-size: 19px;
+    font-family: Ubuntu, sans-serif;
+    color: blue;
+/*    background-color: #3498db;
+    box-shadow: 2px 1px 2px 1px black;*/
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+header > nav {
+    top: 0;
+    right: 0;
+    position: absolute;
+
+}
+
+nav > ul {
+    list-style-type: none;
+}
+
+nav > ul > li {
+    font-family: 'Open Sans', sans-serif;
+    display: inline;
+    margin-left: 6px;
+    color: red;
+    padding: 0 10px 0 10px;
+
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: red;
+    transition: all 0.3s ease;
+}
+
+nav > ul > li > a:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+body > header > p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
