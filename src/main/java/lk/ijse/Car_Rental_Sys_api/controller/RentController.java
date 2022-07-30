@@ -8,6 +8,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
+@RestController
+@RequestMapping("rent")
+@CrossOrigin
 public class RentController {
     @Autowired
     RentService rentService;

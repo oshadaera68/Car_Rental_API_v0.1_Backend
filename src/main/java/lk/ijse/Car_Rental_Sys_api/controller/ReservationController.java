@@ -8,9 +8,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
+@RestController
+@RequestMapping("reservation")
+@CrossOrigin
 public class ReservationController {
-    @Autowired
-    ReservationService reservationService;
+   @Autowired
+   ReservationService reservationService;
 
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.CREATED)
