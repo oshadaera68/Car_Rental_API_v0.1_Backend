@@ -34,4 +34,10 @@ public class ReservationController {
     public ResponseUtil searchReservation(@PathVariable String id) {
         return new ResponseUtil(200, "OK", reservationService.searchReservation(id));
     }
+
+    @DeleteMapping(params = {"id"}, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil deleteReservation(@RequestParam String id) {
+        reservationService.deleteReservation(id);
+        return new ResponseUtil(200, "Deleted", null);
+    }
 }

@@ -37,4 +37,10 @@ public class CarController {
     public ResponseUtil searchCar(@PathVariable String id) {
         return new ResponseUtil(200, "OK", carService.searchCar(id));
     }
+
+    @DeleteMapping(params = {"id"},produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil deleteCar(@RequestParam String id) {
+        carService.deleteCar(id);
+        return new ResponseUtil(200,"Deleted",null);
+    }
 }

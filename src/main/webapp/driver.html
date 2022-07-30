@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/driver.css" rel="stylesheet">
+    <link href="assets/css/normalize/normalize.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black" style="position: relative">
+
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Car Rental System</a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="user.html">User</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#">Vehicle</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#">Driver</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#">Rent</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#">Reservation</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-success" type="submit"><a href="index.html"
+                                                                 style="text-decoration: none; color: white">Log Out</a>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<section class="container-fluid">
+    <section class="row mt-2">
+        <div class="col-10 col-lg-5 px-0" id="id" style="">
+            <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
+                <div class="carousel-indicators">
+                    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                            data-bs-target="#carouselExampleCaptions" type="button"></button>
+                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions"
+                            type="button"></button>
+                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions"
+                            type="button"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img alt="Error loading image" class="d-block w-100"
+                             src="assets/images/car-rental/driver/Caloy.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Error loading image" class="d-block w-100"
+                             src="assets/images/car-rental/driver/car-rental-additional-driver.jpeg">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Error loading image" class="d-block w-100"
+                             src="assets/images/car-rental/driver/gerer-conducteurs-location-vehicule.png">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <h1 class="new position-absolute"><u>Driver Form</u></h1>
+
+    <form action="">
+        <div class="mb-3">
+            <form class="d-flex">
+                <h2 class="position-absolute" id="class">Search Driver</h2>
+                <input aria-label="Search" class="form-control me-2" id="txtId" placeholder="Search User" type="search">
+                <button class="btn btn-primary button" style="" type="submit">Search User</button>
+
+                <label class="position-absolute label" for="txtUserId">Driver Id</label>
+                <input aria-describedby="emailHelp" class="form-control position-absolute" id="txtUserId" name="id" placeholder="Enter driver id"
+                       style="" type="text">
+
+                <label class="position-absolute label1" for="txtUserName">Driver Name</label>
+                <input aria-describedby="emailHelp" class="form-control position-absolute" id="txtUserName" name="name" placeholder="Enter driver name"
+                       style="" type="text">
+
+                <label class="position-absolute label2" for="txtUserNIC">Driver NIC</label>
+                <input aria-describedby="emailHelp" class="form-control position-absolute" id="txtUserNIC" name="nationalID" placeholder="Enter driver NIC"
+                       style="" type="text">
+
+                <label class="position-absolute label3" for="txtUserAddress">Driver Address</label>
+                <input aria-describedby="emailHelp" class="form-control position-absolute" id="txtUserAddress" name="address" placeholder="Enter driver Address"
+                       style="" type="text">
+
+                <label class="position-absolute label5" for="txtUserContact">Driver Contact</label>
+                <input aria-describedby="emailHelp" class="form-control position-absolute" id="txtUserContact" name="contact" placeholder="Enter driver Contact"
+                       style="" type="text">
+
+                <button class="btn btn-success position-absolute" id="save" type="button">Save</button>
+                <button class="btn btn-primary position-absolute" id="update" type="button">Update</button>
+                <button class="btn btn-warning position-absolute" id="loadAll" type="button">Load All</button>
+                <button class="btn btn-danger position-absolute" id="delete" type="button">Delete</button>
+
+                <table class="table position-absolute table-primary text-center table-bordered" id="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">NationalID</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Contact</th>
+                    </tr>
+                    </thead>
+                    <tbody id="driverTable">
+
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </form>
+
+</section>
+</body>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script>
+    var baseURL = "http://localhost:8080/Car_Rental_API_war/driver";
+
+    $("#save").click(function () {
+        saveDriver();
+    })
+
+    $("#update").click(function () {
+        updateDriver();
+    })
+
+    $("#delete").click(function () {
+        deleteDriver();
+    })
+
+    $("#loadAll").click(function () {
+        loadAllDriver();
+    })
+
+    loadAllDriver();
+
+
+    function loadAllDriver() {
+        $("#driverTable").empty();
+        $.ajax({
+            url: baseURL,
+            method: "GET",
+            success: function (resp) {
+                for (const driver of resp.data) {
+                    let row = `<tr><td>${driver.id}</td><td>${driver.name}</td><td>${driver.nic}</td><td>${driver.address}</td><td>${driver.contact}</td></tr>`;
+                    $("#driverTable").append(row);
+                }
+                bindClickEvents();
+                clearForm();
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+
+    function deleteDriver() {
+        let driverId = $("#txtUserId").val();
+
+        $.ajax({
+            url: baseURL + "?id=" + driverId,
+            method: "DELETE",
+            success: function (res) {
+                if (res.code == 200) {
+                    alert("Customer Successfully Deleted");
+                    loadAllDriver();
+                    clearForm();
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function updateDriver() {
+        var driverOb = {
+            id: $("#txtUserId").val(),
+            name: $("#txtUserName").val(),
+            nic: $("#txtUserNIC").val(),
+            address: $("#txtUserAddress").val(),
+            contact: $("#txtUserContact").val()
+        }
+
+        $.ajax({
+            url: baseURL,
+            method: "PUT",
+            contentType: "application/json",
+            data: JSON.stringify(driverOb),
+            success: function (res) {
+                if (res.code == 200) {
+                    alert("Successfully Updated");
+                    loadAllDriver();
+                    clearForm();
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function saveDriver() {
+        var data = $("#driverTable").serialize();
+        $.ajax({
+            url: baseURL,
+            method: "POST",
+            data: data,
+            success: function (res) {
+                if (res.code == 200) {
+                    alert("Success");
+                    loadAllDriver();
+                    clearForm();
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function clearForm() {
+        $("#txtUserId").val("");
+        $("#txtUserName").val("");
+        $("#txtUserNIC").val("");
+        $("#txtUserAddress").val("");
+        $("#txtUserContact").val("");
+    }
+
+    function bindClickEvents() {
+        $("#driverTable>tr").click(function () {
+            let id = $(this).children().eq(0).text();
+            let name = $(this).children().eq(1).text();
+            let nic = $(this).children().eq(2).text();
+            let address = $(this).children().eq(3).text();
+            let contact = $(this).children().eq(4).text();
+
+            $("#txtUserId").val(id);
+            $("#txtUserName").val(name);
+            $("#txtUserNIC").val(nic);
+            $("#txtUserAddress").val(address);
+            $("#txtUserContact").val(contact);
+        });
+    }
+</script>
+</html>

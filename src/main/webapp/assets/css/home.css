@@ -1,63 +1,91 @@
-#bg-image{
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../images/model-3.jpg");
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header {
-    position: fixed;
-    height: 65px;
-    width: 100%;
-    font-size: 19px;
-    font-family: Ubuntu, sans-serif;
-    color: blue;
-/*    background-color: #3498db;
-    box-shadow: 2px 1px 2px 1px black;*/
-    top: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    z-index: 1;
-}
-
-header > nav {
-    top: 0;
-    right: 0;
+#id {
     position: absolute;
-
+    left: 2vh !important;
+    top: 20vh !important;
+    width: 110vh;
+    height: 77vh;
+    justify-content: center;
 }
 
-nav > ul {
-    list-style-type: none;
+
+#h1-1 {
+    position: absolute;
+    left: 131vh;
+    font-family: Ubuntu, sans-serif;
+    color: #6f42c1;
 }
 
-nav > ul > li {
-    font-family: 'Open Sans', sans-serif;
-    display: inline;
-    margin-left: 6px;
-    color: red;
-    padding: 0 10px 0 10px;
-
+#btn1 {
+    position: absolute;
+    left: 125vh;
+    top: 34vh;
+    font-family: Open Sans, sans-serif;
 }
 
-nav > ul > li > a {
+a{
     text-decoration: none;
-    color: red;
-    transition: all 0.3s ease;
-}
-
-nav > ul > li > a:hover {
-    cursor: pointer;
-    color: blue;
-}
-
-body > header > p {
-    font-family: 'Open Sans', sans-serif;
     color: white;
+}
+
+#img1 {
+    position: absolute;
+    left: 123vh;
+    top: 22vh;
+}
+
+#img2 {
+    position: absolute;
+    left: 149vh;
+    top: 22vh;
+}
+
+#btn2 {
+    position: absolute;
+    left: 151vh;
+    top: 34vh;
+    font-family: Open Sans, sans-serif;
+}
+
+#img3{
+    position: absolute;
+    left: 176vh;
+    top: 22vh;
+}
+
+#btn3{
+    position: absolute;
+    left: 177vh;
+    top: 34vh;
+    height: 38px;
+    width: 79px;
+    font-family: Open Sans, sans-serif;
+}
+
+#img4{
+    position: absolute;
+    left: 123vh;
+    top: 40vh;
+}
+
+#btn4{
+    position: absolute;
+    left: 122vh;
+    top: 51vh;
+    height: 38px;
+    width: 110px;
+    font-family: Open Sans, sans-serif;
+}
+
+#img5{
+    position: absolute;
+    left: 149vh;
+    top: 41vh;
+}
+
+#btn5{
+    position: absolute;
+    left: 150vh;
+    top: 51vh;
+    height: 40px;
+    font-family: Open Sans, sans-serif;
 }

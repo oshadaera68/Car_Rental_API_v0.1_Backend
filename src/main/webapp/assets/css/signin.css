@@ -1,0 +1,60 @@
+#h1-2 {
+    left: 87vh;
+    top: 22vh;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    color: #6f42c1;
+}
+
+#txtUserId {
+    width: 65vh;
+    left: 65vh;
+    top: 31vh;
+}
+
+#txtUserName {
+    width: 65vh;
+    left: 65vh;
+    top: 39vh;
+}
+
+#txtUserNic{
+    width: 65vh;
+    left: 65vh;
+    top: 47vh;
+}
+
+#txtUserAddress {
+    width: 65vh;
+    left: 65vh;
+    top: 56vh;
+}
+
+#txtUserContact {
+    width: 65vh;
+    left: 65vh;
+    top: 64vh;
+}
+
+#txtUserEmail {
+    width: 65vh;
+    top: 72vh;
+    left: 65vh;
+}
+
+#btn {
+    left: 90vh;
+    top: 82vh;
+    width: 12vh;
+}
+
+#imgSignIn {
+    left: 89vh;
+    top: 9vh;
+}
+
+#small {
+    position: absolute;
+    top: 96vh;
+    left: 74vh;
+    font-family: Ubuntu, sans-serif;
+}

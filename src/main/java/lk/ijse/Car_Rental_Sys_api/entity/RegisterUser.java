@@ -21,7 +21,7 @@ import javax.persistence.Id;
 @Entity
 public class RegisterUser {
     @Id
-    private String guestId;
+    private String regId;
     private String name;
     private String nic;
     private String address;

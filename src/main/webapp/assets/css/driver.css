@@ -1,0 +1,118 @@
+#id {
+    position: absolute;
+    left: 2vh !important;
+    top: 28vh !important;
+    width: 68vh;
+    height: 70vh;
+    justify-content: center;
+}
+
+.new {
+    left: 123vh;
+    color: #0a53be;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+#class {
+    font-family: Ubuntu, sans-serif;
+    color: #6f42c1;
+}
+
+#txtId {
+    position: absolute;
+    top: 19vh;
+    width: 60vh;
+}
+
+.button {
+    position: absolute;
+    left: 64vh;
+    top: 19vh;
+}
+
+.label {
+    left: 118vh;
+    top: 19vh;
+}
+
+#txtUserId {
+    width: 67vh;
+    left: 118vh;
+    top: 23vh;
+}
+
+.label1 {
+    left: 118vh;
+    top: 29vh;
+}
+
+#txtUserName {
+    width: 67vh;
+    left: 118vh;
+    top: 33vh;
+}
+
+.label2 {
+    left: 118vh;
+    top: 39vh;
+}
+
+#txtUserNIC {
+    width: 67vh;
+    left: 118vh;
+    top: 43vh;
+}
+
+.label3 {
+    left: 118vh;
+    top: 49vh;
+}
+
+#txtUserAddress {
+    width: 67vh;
+    left: 118vh;
+    top: 53vh;
+}
+
+.label4 {
+    left: 118vh;
+    top: 58vh;
+}
+
+#txtUserContact {
+    width: 67vh;
+    left: 118vh;
+    top: 63vh;
+}
+
+.label5 {
+    left: 118vh;
+    top: 59vh;
+}
+
+#save {
+    left: 126vh;
+    top: 70vh;
+    width: 10vh !important;
+}
+
+#update {
+    left: 138vh;
+    top: 70vh;
+}
+
+#loadAll {
+    left: 150vh;
+    top: 70vh;
+}
+
+#delete {
+    left: 163vh;
+    top: 70vh;
+}
+
+#table {
+    top: 78vh;
+    width: 172vh;
+    left: 11vh;
+}

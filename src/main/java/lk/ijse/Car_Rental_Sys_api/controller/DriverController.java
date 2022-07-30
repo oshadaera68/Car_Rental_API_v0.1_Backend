@@ -44,4 +44,10 @@ public class DriverController {
     public ResponseUtil searchDriver(@PathVariable String id){
         return new ResponseUtil(200,"OK",driverService.searchDriver(id));
     }
+
+    @DeleteMapping(params = {"id"},produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil deleteDriver(@RequestParam String id) {
+        driverService.deleteDriver(id);
+        return new ResponseUtil(200,"Deleted",null);
+    }
 }

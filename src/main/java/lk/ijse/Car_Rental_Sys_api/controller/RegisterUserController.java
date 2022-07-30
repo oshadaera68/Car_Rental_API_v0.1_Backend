@@ -9,7 +9,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("admin")
+@RequestMapping("register/user")
 @CrossOrigin
 public class RegisterUserController {
     @Autowired

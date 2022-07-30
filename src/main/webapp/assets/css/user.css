@@ -1,0 +1,121 @@
+.new {
+    position: absolute;
+    left: 138vh;
+    top: 51px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    color: #0a53be;
+}
+
+#id {
+    position: absolute;
+    left: 2vh !important;
+    top: 27vh !important;
+    width: 68vh;
+    height: 71vh;
+    justify-content: center;
+}
+
+#txtId {
+    position: absolute;
+    width: 67vh;
+    top: 20vh;
+}
+
+.button {
+    position: absolute;
+    left: 70vh;
+    top: 20vh;
+}
+
+.label {
+    left: 126vh;
+    top: 15vh;
+}
+
+#txtUserId {
+    width: 67vh;
+    left: 126vh;
+    top: 18vh;
+}
+
+.label1 {
+    left: 126vh;
+    top: 24vh;
+}
+
+#txtUserName {
+    width: 67vh;
+    left: 126vh;
+    top: 27vh;
+}
+
+.label4{
+    left: 126vh;
+    top: 33vh;
+}
+
+#txtUserNic{
+    width: 67vh;
+    left: 126vh;
+    top: 36vh;
+}
+
+.label2 {
+    left: 126vh;
+    top: 42vh;
+}
+
+#txtUserAddress {
+    width: 67vh;
+    left: 126vh;
+    top: 45vh;
+}
+
+.label3 {
+    left: 126vh;
+    top: 51vh;
+}
+
+#txtUserContact {
+    width: 67vh;
+    left: 126vh;
+    top: 54vh;
+}
+
+.label5{
+    left: 126vh;
+    top: 60vh;
+}
+
+#txtUserEmail{
+    width: 67vh;
+    left: 126vh;
+    top: 63vh;
+}
+
+#save {
+    left: 126vh;
+    top: 70vh;
+    width: 10vh !important;
+}
+
+#update {
+    left: 138vh;
+    top: 70vh;
+}
+
+#loadAll {
+    left: 150vh;
+    top: 70vh;
+}
+
+#delete {
+    left: 163vh;
+    top: 70vh;
+}
+
+#table{
+    width: 175vh;
+    top: 79vh;
+    left: 12vh;
+}

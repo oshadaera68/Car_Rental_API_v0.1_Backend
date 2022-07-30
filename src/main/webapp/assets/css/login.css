@@ -1,0 +1,42 @@
+#image {
+    left: 92vh;
+    top: 12vh;
+}
+
+#text {
+    left: 91vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    top: 27vh;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+#txtUserName {
+    top: 37vh;
+    width: 44vh;
+    left: 76vh;
+}
+
+#txtPassword {
+    top: 47vh;
+    width: 44vh;
+    left: 76vh;
+}
+
+#btn {
+    left: 93vh;
+    top: 57vh;
+}
+
+#t {
+    text-decoration: none;
+    color: white;
+}
+
+#small {
+    position: absolute;
+    top: 96vh;
+    left: 78vh;
+    font-family: Ubuntu, sans-serif;
+}

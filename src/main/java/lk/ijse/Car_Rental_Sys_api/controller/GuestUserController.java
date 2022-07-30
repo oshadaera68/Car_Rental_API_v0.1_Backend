@@ -10,7 +10,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("guest")
+@RequestMapping("guest/user")
 @CrossOrigin
 public class GuestUserController {
 
@@ -38,5 +38,11 @@ public class GuestUserController {
     @GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseUtil searchGuestUser(@PathVariable String id) {
         return new ResponseUtil(200, "OK", guestUserService.searchGuestUser(id));
+    }
+
+    @DeleteMapping(params = {"id"},produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil deleteGuestUser(@RequestParam String id) {
+        guestUserService.deleteGuestUser(id);
+        return new ResponseUtil(200,"Deleted",null);
     }
 }

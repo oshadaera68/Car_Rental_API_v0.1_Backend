@@ -1,0 +1,153 @@
+#id {
+    position: absolute;
+    left: 2vh !important;
+    top: 28vh !important;
+    width: 58vh;
+    height: 70vh;
+    justify-content: center;
+}
+
+.new {
+    left: 123vh;
+    color: #0a53be;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+#class {
+    font-family: Ubuntu, sans-serif;
+    color: #6f42c1;
+}
+
+#txtId {
+    position: absolute;
+    top: 19vh;
+    width: 60vh;
+}
+
+.button {
+    position: absolute;
+    left: 64vh;
+    top: 19vh;
+}
+
+.label {
+    left: 118vh;
+    top: 16vh;
+}
+
+#txtVehicleId {
+    width: 31vh;
+    left: 118vh;
+    top: 20vh;
+}
+
+#selectTransmission {
+    position: absolute;
+    width: 31vh;
+    left: 118vh;
+    top: 40vh;
+}
+
+.label1 {
+    left: 118vh;
+    top: 26vh;
+}
+
+#selectFuel {
+    position: absolute;
+    width: 31vh;
+    top: 50vh;
+    left: 118vh;
+}
+
+#txtVehicleName {
+    width: 31vh;
+    left: 118vh;
+    top: 30vh;
+}
+
+.label2 {
+    left: 118vh;
+    top: 36vh;
+}
+
+
+.label3 {
+    left: 118vh;
+    top: 46vh;
+}
+
+#txtUserAddress {
+    width: 31vh;
+    left: 118vh;
+    top: 51vh;
+    position: absolute;
+}
+
+.label4 {
+    left: 118vh;
+    top: 58vh;
+}
+
+#txtFuel {
+    position: absolute;
+    width: 31vh;
+    left: 118vh;
+    top: 50vh;
+}
+
+#txtNoOfPassengers {
+    width: 31vh;
+    left: 118vh;
+    top: 61vh;
+}
+
+#txtBrand {
+    width: 31vh;
+    top: 20vh;
+    left: 158vh;
+}
+
+.label5 {
+    left: 118vh;
+    top: 57vh;
+
+}
+
+#save {
+    left: 126vh;
+    top: 70vh;
+    width: 10vh !important;
+}
+
+#update {
+    left: 138vh;
+    top: 70vh;
+}
+
+#loadAll {
+    left: 150vh;
+    top: 70vh;
+}
+
+#delete {
+    left: 163vh;
+    top: 70vh;
+}
+
+#table {
+    top: 78vh;
+    width: 172vh;
+    left: 11vh;
+}
+
+#txt {
+    width: 31vh;
+    left: 157vh;
+    top: 20vh;
+}
+
+.label6 {
+    top: 16vh;
+    left: 158vh;
+}

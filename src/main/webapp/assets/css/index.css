@@ -1,0 +1,51 @@
+#img {
+    background-image: url("../images/model-y.jpg");
+    background-color: #cccccc;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+#h1-1 {
+    position: absolute;
+    font-family: Open Sans, sans-serif;
+    font-size: 43px;
+    color: #6f42c1;
+}
+
+#h3-1{
+    position: absolute;
+    font-family: Ubuntu,sans-serif;
+    font-size: 32px;
+    top: 24vh;
+    color: #0b5ed7;
+}
+
+.temp {
+    position: absolute;
+    top: 32vh;
+    font-family: Ubuntu,sans-serif;
+    font-size: 29px;
+    color: white;
+    left: 1vh;
+}
+
+.temp1{
+    position: absolute;
+    top: 52vh;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 29px;
+    color: white;
+    left: 1vh;
+}
+
+#i-1{
+    color: #6f42c1;
+}
+
+#i-2{
+    color: #6f42c1;
+}

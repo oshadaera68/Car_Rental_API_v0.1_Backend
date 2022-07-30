@@ -22,7 +22,7 @@ public class Driver {
     @Id
     private String id;
     private String name;
-    private String NIC;
+    private String nationalID;
     private String address;
     private String contact;
 }

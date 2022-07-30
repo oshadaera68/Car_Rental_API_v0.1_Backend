@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicle</title>
+    <link rel="stylesheet" href="assets/css/normalize/normalize.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vehicle.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black" style="position: relative">
+
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Car Rental System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="user.html">User</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Vehicle</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Driver</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Rent</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Reservation</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-success" type="submit"><a href="index.html"
+                                                                 style="text-decoration: none; color: white">Log Out</a>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<section class="container-fluid">
+    <section class="row mt-2">
+        <div class="col-10 col-lg-5 px-0" id="id" style="">
+            <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
+                <div class="carousel-indicators">
+                    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                            data-bs-target="#carouselExampleCaptions" type="button"></button>
+                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions"
+                            type="button"></button>
+                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions"
+                            type="button"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img alt="Error loading image" class="d-block w-100"
+                             src="assets/images/car-rental/vehicle/vehicle.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Error loading image" class="d-block w-100"
+                             src="assets/images/car-rental/vehicle/vehicle1.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Error loading image" class="d-block w-100"
+                             src="assets/images/car-rental/vehicle/top_ph002.png">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <h1 class="new position-absolute"><u>Vehicle Form</u></h1>
+
+    <form action="">
+        <div class="mb-3">
+            <form class="d-flex">
+                <h2 class="position-absolute" id="class">Search Vehicle</h2>
+                <input class="form-control me-2" type="search" id="txtId" placeholder="Search Vehicle"
+                       aria-label="Search">
+                <button class="btn btn-primary button" style="" type="submit">Search Vehicle</button>
+
+                <label for="txtVehicleId" class="position-absolute label">Vehicle Id</label>
+                <input type="text" class="form-control position-absolute" id="txtVehicleId" name="id" style=""
+                       aria-describedby="emailHelp" placeholder="Enter Vehicle id">
+
+                <label for="txtVehicleName" class="position-absolute label">Vehicle Name</label>
+                <input type="text" class="form-control position-absolute" id="txtVehicleName" name="name" style=""
+                       aria-describedby="emailHelp" placeholder="Enter Vehicle id">
+
+                <label for="selectTransmission" class="position-absolute label2">Transmission Type</label>
+                <select class="form-select" aria-label="Default select example" id="selectTransmission"
+                        name="transmissionType">
+                    <option value="1">Auto</option>
+                    <option value="2">Manual</option>
+                </select>
+
+                <label for="selectFuel" class="position-absolute label3">Fuel type</label>
+                <select class="form-select" aria-label="Default select example" id="selectFuel" name="fuelType">
+                    <!--<option value="1"></option>-->
+                    <option value="2">Diesel</option>
+                    <option value="3">Petrol</option>
+                </select>
+
+                <label for="txtNoOfPassengers" class="position-absolute label5">No Of Passengers</label>
+                <input type="text" class="form-control position-absolute" id="txtNoOfPassengers" name="noOfPassengers"
+                       style=""
+                       aria-describedby="emailHelp" placeholder="Enter no of passengers">
+
+                <label for="txtBrand" class="position-absolute label6">Brand</label>
+                <input type="text" class="form-control position-absolute" id="txtBrand" name="brand" style=""
+                       aria-describedby="emailHelp" placeholder="Enter Vehicle Brand">
+
+                <button type="button" class="btn btn-success position-absolute" id="save">Save</button>
+                <button type="button" class="btn btn-primary position-absolute" id="update">Update</button>
+                <button type="button" class="btn btn-warning position-absolute" id="loadAll">Load All</button>
+                <button type="button" class="btn btn-danger position-absolute" id="delete">Delete</button>
+
+                <table class="table position-absolute table-primary text-center table-bordered" id="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Vehicle Id</th>
+                        <th scope="col">Vehicle Name</th>
+                        <th scope="col">Transmission Type</th>
+                        <th scope="col">Fuel Type</th>
+                        <th scope="col">No Of Passengers</th>
+                        <th scope="col">Brand</th>
+                    </tr>
+                    </thead>
+                    <tbody id="vehicleTable">
+
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </form>
+
+</section>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/ajax/vehicle.js"></script>
+</body>
+</html>

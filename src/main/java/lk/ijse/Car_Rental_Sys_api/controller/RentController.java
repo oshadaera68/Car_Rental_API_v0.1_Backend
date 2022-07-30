@@ -1,6 +1,5 @@
 package lk.ijse.Car_Rental_Sys_api.controller;
 
-import lk.ijse.Car_Rental_Sys_api.dto.AdminDto;
 import lk.ijse.Car_Rental_Sys_api.dto.RentDto;
 import lk.ijse.Car_Rental_Sys_api.service.RentService;
 import lk.ijse.Car_Rental_Sys_api.util.ResponseUtil;
@@ -26,13 +25,19 @@ public class RentController {
     }
 
     @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseUtil updateAdmin(@RequestBody RentDto dto) {
+    public ResponseUtil updateRent(@RequestBody RentDto dto) {
         rentService.updateRent(dto);
         return new ResponseUtil(200, "update admin", null);
     }
 
     @GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseUtil searchAdmin(@PathVariable String id) {
+    public ResponseUtil searchRent(@PathVariable String id) {
         return new ResponseUtil(200, "OK", rentService.searchRent(id));
+    }
+
+    @DeleteMapping(params = {"id"}, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil deleteRent(@RequestParam String id) {
+        rentService.deleteRent(id);
+        return new ResponseUtil(200, "Deleted", null);
     }
 }

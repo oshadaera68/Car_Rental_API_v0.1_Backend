@@ -1,31 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Car Rental</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/normalize/normalize.css">
-
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-<header></header>
-<main>
-    <section id="bg-image">
-        <div>
-            <h1 id="h1-1">Welcome to Car Rental System</h1>
-            <small class="copyright">Car Rental System v0.1 . CopyRight By Era. All Rights Reserved. 2022</small>
-            <button type="button" class="button"><a href="home.html">Get Started</a></button>
+<section class="position-relative vw-100 vh-100 d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black" style="position: relative">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Easy Car Rental System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">User</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Vehicle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Driver</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Rent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Reservation</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-success"  id="btn" style="position: absolute; left: 180vh;" type="submit"><a
+                            href="signin.html" style="text-decoration: none; color: white">Sign in</a></button>
+                    <button class="btn btn-success" type="submit"><a href="logIn.html" style="text-decoration: none; color: white">Log In</a></button>
+                </form>
+            </div>
         </div>
+    </nav>
 
-        <div id="text">
+    <div id="img">
+        <h1 id="h1-1">Welcome To Easy Car <br> Rental System..</h1>
+        <br>
+        <h3 id="h3-1"><i>Customer Idea's in our company</i></h3>
+        <p class="temp">1.Easy Car Rental PVT Ltd. is a very good rental service in <br> sri lanka. So I recommended the
+            this service.<br>
+            -<i id="i-1">Nishan Gallage</i>
+        </p>
 
-        </div>
+        <p class="temp1">2.Easy Car Rental is a best rental service in our country.<br>
+            -<i id="i-2">Sadani Vihasna</i>
+        </p>
+    </div>
 
-
+    <section class="">
+        <footer class="text-center text-white" style="background-color: #0a4275;">
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © by Easy Car Rental PVT Ltd. All right Reserved. 2022
+            </div>
+        </footer>
     </section>
-</main>
-<script src="assets/js/typewriter.js"></script>
+
+</section>
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
