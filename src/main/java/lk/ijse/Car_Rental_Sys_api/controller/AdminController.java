@@ -38,9 +38,9 @@ public class AdminController {
         return new ResponseUtil(200, "OK", adminService.searchAdmin(id));
     }
 
-    @DeleteMapping(params = {"id"},produces = MediaType.APPLICATION_JSON_VALUE)
+    @DeleteMapping(params = {"id"}, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseUtil deleteAdmin(@RequestParam String id) {
         adminService.deleteAdmin(id);
-        return new ResponseUtil(200,"Deleted",null);
+        return new ResponseUtil(200, "Deleted", null);
     }
 }
