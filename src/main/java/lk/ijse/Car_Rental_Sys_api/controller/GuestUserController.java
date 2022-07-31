@@ -1,6 +1,5 @@
 package lk.ijse.Car_Rental_Sys_api.controller;
 
-import lk.ijse.Car_Rental_Sys_api.dto.AdminDto;
 import lk.ijse.Car_Rental_Sys_api.dto.GuestUserDto;
 import lk.ijse.Car_Rental_Sys_api.service.GuestUserService;
 import lk.ijse.Car_Rental_Sys_api.util.ResponseUtil;
@@ -10,7 +9,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("user")
+@RequestMapping("register")
 @CrossOrigin
 public class GuestUserController {
 
@@ -40,9 +39,9 @@ public class GuestUserController {
         return new ResponseUtil(200, "OK", guestUserService.searchGuestUser(id));
     }
 
-    @DeleteMapping(params = {"id"},produces = MediaType.APPLICATION_JSON_VALUE)
+    @DeleteMapping(params = {"id"}, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseUtil deleteGuestUser(@RequestParam String id) {
         guestUserService.deleteGuestUser(id);
-        return new ResponseUtil(200,"Deleted",null);
+        return new ResponseUtil(200, "Deleted", null);
     }
 }
