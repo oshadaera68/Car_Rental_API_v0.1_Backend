@@ -18,7 +18,6 @@ import java.util.List;
 @Service
 @Transactional
 public class RentServiceImpl implements RentService {
-
     @Autowired
     private RentRepo repo;
 

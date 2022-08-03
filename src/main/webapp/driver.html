@@ -23,7 +23,7 @@
                     <a aria-current="page" class="nav-link active" href="home.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a aria-current="page" class="nav-link active" href="user.html">User</a>
+                    <a aria-current="page" class="nav-link active" href="guestUser.html">User</a>
                 </li>
                 <li class="nav-item">
                     <a aria-current="page" class="nav-link active" href="#">Vehicle</a>
@@ -238,7 +238,7 @@
             method: "POST",
             data: data,
             success: function (res) {
-                if (res.code == 200) {
+                if (res.code === 200) {
                     alert("Success");
                     loadAllDriver();
                     clearForm();

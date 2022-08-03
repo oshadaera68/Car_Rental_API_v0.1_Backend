@@ -23,7 +23,7 @@
                     <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="user.html">User</a>
+                    <a class="nav-link active" aria-current="page" href="guestUser.html">User</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Vehicle</a>
@@ -114,9 +114,8 @@
 
                 <label for="selectFuel" class="position-absolute label3">Fuel type</label>
                 <select class="form-select" aria-label="Default select example" id="selectFuel" name="fuelType">
-                    <!--<option value="1"></option>-->
-                    <option value="2">Diesel</option>
-                    <option value="3">Petrol</option>
+                    <option value="1">Diesel</option>
+                    <option value="2">Petrol</option>
                 </select>
 
                 <label for="txtNoOfPassengers" class="position-absolute label5">No Of Passengers</label>
@@ -155,6 +154,148 @@
 </section>
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/jquery-3.6.0.min.js"></script>
-<script src="assets/js/ajax/vehicle.js"></script>
+<script>
+    var baseURL = "http://localhost:8080/Car_Rental_API_war/car";
+
+    $("#id").click(function () {
+        searchVehicle();
+    })
+
+    $("#save").click(function () {
+        saveVehicle();
+    })
+
+    $("#loadAll").click(function () {
+        loadAllVehicle();
+    })
+
+    $("#update").click(function () {
+        updateVehicle();
+    })
+
+    $("#delete").click(function () {
+        deleteVehicle()
+    })
+
+    function searchVehicle() {
+        var carId = $("#txtVehicleId").val();
+
+        $.ajax({
+            url: baseURL + "/" + carId,
+            method: "GET",
+            success: function (res) {
+                if (res.code === 200) {
+                    var car = res.data;
+                    $("#txtVehicleId").val(car.id);
+                    $("#txtVehicleName").val(car.name);
+                    $("#selectTransmission").val(car.transmissionType);
+                    $("#selectFuel").val(car.fuelType);
+                    $("#txtNoOfPassengers").val(car.noOfPassengers);
+                    $("#txtBrand").val(car.brand);
+                } else {
+                    clearForm();
+                }
+            },
+            error:function (ob){
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+
+    function deleteVehicle() {
+        let driverId = $("#txtVehicleId").val();
+
+        $.ajax({
+            url: baseURL + "?id=" + driverId,
+            method: "DELETE",
+            success: function (res) {
+                if (res.code === 200) {
+                    alert("Customer Successfully Deleted");
+                    loadAllDriver();
+                    clearForm();
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function updateVehicle() {
+        var driverOb = {
+            id: $("#txtVehicleId").val(),
+            name: $("#txtVehicleName").val(),
+            transmission: $("#selectTransmission").val(),
+            fuel: $("#selectFuel").val(),
+            passengers: $("#txtNoOfPassengers").val(),
+            brand: $("#txtBrand").val()
+        }
+
+        $.ajax({
+            url: baseURL,
+            method: "PUT",
+            contentType: "application/json",
+            data: JSON.stringify(driverOb),
+            success: function (res) {
+                if (res.code === 200) {
+                    alert("Successfully Updated");
+                    loadAllVehicle();
+                    clearForm();
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function loadAllVehicle() {
+        $("#vehicleTable").empty();
+        $.ajax({
+            url: baseURL,
+            method: "GET",
+            success: function (resp) {
+                for (const vehicle of resp.data) {
+                    let row = `<tr><td>${car.id}</td><td>${car.name}</td><td>${car.transmissionType}</td><td>${car.fuelType}</td><td>${car.noOfPassengers}</td><td>${car.brand}</td></tr>`;
+                    $("#vehicleTable").append(row);
+                }
+                bindClickEvents();
+                clearForm();
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function saveVehicle() {
+        var data = $("#vehicleTable").serialize();
+        $.ajax({
+            url: baseURL,
+            method: "POST",
+            data: data,
+            success: function (res) {
+                if (res.code === 200) {
+                    alert("Success");
+                    loadAllVehicle()
+                    clearForm();
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+
+        function clearForm() {
+            $("#txtVehicleId").val("");
+            $("#txtVehicleName").val("");
+            $("#selectTransmission").val("");
+            $("#selectFuel").val("");
+            $("#txtNoOfPassengers").val("");
+            $("#txtBrand").val("");
+        }
+    }
+</script>
 </body>
 </html>

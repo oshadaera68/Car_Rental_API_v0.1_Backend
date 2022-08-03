@@ -9,7 +9,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("register")
+@RequestMapping("guest")
 @CrossOrigin
 public class GuestUserController {
 

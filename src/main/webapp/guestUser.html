@@ -23,7 +23,7 @@
                     <a aria-current="page" class="nav-link active" href="home.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a aria-current="page" class="nav-link active" href="user.html">User</a>
+                    <a aria-current="page" class="nav-link active" href="guestUser.html">User</a>
                 </li>
                 <li class="nav-item">
                     <a aria-current="page" class="nav-link active" href="#">Vehicle</a>
@@ -152,7 +152,7 @@
 </section>
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script>
-    var baseURL = "http://localhost:8080/Car_Rental_API_war/user";
+    var baseURL = "http://localhost:8080/Car_Rental_API_war/guest";
 
     $("#id").click(function () {
         searchUser();
@@ -183,12 +183,12 @@
             success: function (res) {
                 if (res.code = 200) {
                     var user = res.data;
-                    $("#txtUserId").val(user.id);
-                    $("#txtUserName").val(user.name);
-                    $("#txtUserNic").val(user.address);
-                    $("#txtUserAddress").val(user.address);
-                    $("#txtUserContact").val(user.contact);
-                    $("#txtUserEmail").val(user.email);
+                    $("#txtUserId").val(guestUser.id);
+                    $("#txtUserName").val(guestUser.name);
+                    $("#txtUserNic").val(guestUser.address);
+                    $("#txtUserAddress").val(guestUser.address);
+                    $("#txtUserContact").val(guestUser.contact);
+                    $("#txtUserEmail").val(guestUser.email);
                 } else {
                     clearForm();
                 }
@@ -253,7 +253,7 @@
             method: "GET",
             success: function (resp) {
                 for (const user of resp.data) {
-                    let row = `<tr><td>${user.id}</td><td>${user.name}</td><td>${user.nic}</td><td>${user.address}</td><td>${user.contact}</td><td>${user.email}</td></tr>`;
+                    let row = `<tr><td>${guestUser.id}</td><td>${guestUser.name}</td><td>${guestUser.nic}</td><td>${guestUser.address}</td><td>${guestUser.contact}</td><td>${guestUser.email}</td></tr>`;
                     $("#vehicleTable").append(row);
                 }
                 bindClickEvents();
