@@ -61,7 +61,7 @@ public class RegisterUserServiceImpl implements RegisterUserService {
 
     @Override
     public List<RegisterUserDto> getAllRegUsers() {
-        return map3.map(repo.findAll(), new TypeToken<List<DriverDto>>() {
+        return map3.map(repo.findAll(), new TypeToken<List<RegisterUserDto>>() {
         }.getType());
     }
 }

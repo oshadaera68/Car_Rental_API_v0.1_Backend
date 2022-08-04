@@ -66,7 +66,7 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public List<AdminDto> getAllAdmins() {
-        return map4.map(repo.findAll(), new TypeToken<List<CarDto>>() {
+        return map4.map(repo.findAll(), new TypeToken<List<AdminDto>>() {
         }.getType());
     }
 }
