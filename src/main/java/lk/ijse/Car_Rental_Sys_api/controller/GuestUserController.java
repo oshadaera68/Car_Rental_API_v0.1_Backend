@@ -25,7 +25,7 @@ public class GuestUserController {
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseUtil getAllGuestUser() {
-        return new ResponseUtil(200, "All Admins", guestUserService.getGuestUsers());
+        return new ResponseUtil(200, "All User", guestUserService.getGuestUsers());
     }
 
     @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE)

@@ -1,6 +1,5 @@
 package lk.ijse.Car_Rental_Sys_api.service.impl;
 
-import lk.ijse.Car_Rental_Sys_api.dto.CarDto;
 import lk.ijse.Car_Rental_Sys_api.dto.DriverDto;
 import lk.ijse.Car_Rental_Sys_api.dto.RegisterUserDto;
 import lk.ijse.Car_Rental_Sys_api.entity.RegisterUser;
@@ -23,7 +22,6 @@ public class RegisterUserServiceImpl implements RegisterUserService {
 
     @Autowired
     private ModelMapper map3;
-
 
     @Override
     public void saveRegUser(RegisterUserDto dto) {

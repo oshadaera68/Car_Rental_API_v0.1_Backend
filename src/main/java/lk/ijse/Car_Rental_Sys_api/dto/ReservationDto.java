@@ -5,10 +5,14 @@
 
 package lk.ijse.Car_Rental_Sys_api.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+
+import java.time.LocalDate;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -16,9 +20,9 @@ import lombok.ToString;
 @ToString
 public class ReservationDto {
     private String resId;
-    private String registerDate;
-    private String returnDate;
-    private int numberOfDays;
-    private String cancellationDetails;
-    private String pickUpDate;
+    @JsonFormat(pattern = "yyyy-MM-dd")
+    private LocalDate registerDate;
+    private GuestUserDto guestUserDto;
+    private RegisterUserDto registerUserDto;
+    List<RentDto> rentDtoList;
 }

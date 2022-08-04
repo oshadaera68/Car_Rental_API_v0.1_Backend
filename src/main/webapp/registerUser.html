@@ -3,39 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>User</title>
-    <link href="assets/css/user.css" rel="stylesheet">
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/normalize/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/normalize/normalize.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-black" style="position: relative">
 
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Car Rental System</a>
-        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-                class="navbar-toggler" data-bs-target="#navbarSupportedContent"
-                data-bs-toggle="collapse" type="button">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a aria-current="page" class="nav-link active" href="home.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a aria-current="page" class="nav-link active" href="guestUser.html">User</a>
+                    <a class="nav-link active" aria-current="page" href="guestUser.html">User</a>
                 </li>
                 <li class="nav-item">
-                    <a aria-current="page" class="nav-link active" href="#">Vehicle</a>
+                    <a class="nav-link active" aria-current="page" href="#">Vehicle</a>
                 </li>
                 <li class="nav-item">
-                    <a aria-current="page" class="nav-link active" href="driver.html">Driver</a>
+                    <a class="nav-link active" aria-current="page" href="driver.html">Driver</a>
                 </li>
                 <li class="nav-item">
-                    <a aria-current="page" class="nav-link active" href="#">Rent</a>
+                    <a class="nav-link active" aria-current="page" href="#">Rent</a>
                 </li>
                 <li class="nav-item">
-                    <a aria-current="page" class="nav-link active" href="#">Reservation</a>
+                    <a class="nav-link active" aria-current="page" href="#">Reservation</a>
                 </li>
             </ul>
             <form class="d-flex">
@@ -87,52 +87,43 @@
         </div>
     </section>
 
-    <button class="btn btn-primary button" style="position: absolute;left: 86vh;" type="submit"><a
-            href="registerUser.html" style="text-decoration: none; color: white">Registered User</a></button>
-
     <h1 class="new"><u>User Form</u></h1>
     <form action="">
         <div class="mb-3">
             <form class="d-flex">
                 <h2 class="position-absolute" style="font-family: Ubuntu, sans-serif; top: 13vh; color: red">Search
                     User</h2>
-                <input aria-label="Search" class="form-control me-2" id="txtId" placeholder="Search User" type="search">
+                <input class="form-control me-2" type="search" id="txtId" placeholder="Search User" aria-label="Search">
                 <button class="btn btn-primary button" style="" type="submit">Search User</button>
 
-                <label class="position-absolute label" for="txtUserId">User Id</label>
-                <input aria-describedby="emailHelp" class="form-control position-absolute" id="txtUserId"
-                       placeholder="Enter user id"
-                       style="" type="text">
+                <label for="txtUserId" class="position-absolute label">User Id</label>
+                <input type="text" class="form-control position-absolute" id="txtUserId" style=""
+                       aria-describedby="emailHelp" placeholder="Enter user id">
 
-                <label class="position-absolute label1" for="txtUserName">User Name</label>
-                <input aria-describedby="emailHelp" class="form-control position-absolute" id="txtUserName"
-                       placeholder="Enter user name"
-                       style="" type="text">
+                <label for="txtUserName" class="position-absolute label1">User Name</label>
+                <input type="text" class="form-control position-absolute" id="txtUserName" style=""
+                       aria-describedby="emailHelp" placeholder="Enter user name">
 
-                <label class="position-absolute label4" for="txtUserNic">User NIC</label>
-                <input aria-describedby="emailHelp" class="form-control position-absolute" id="txtUserNic"
-                       name="nic"
-                       placeholder="Enter user nic" style="" type="text">
+                <label for="txtUserNic" class="position-absolute label4">User NIC</label>
+                <input type="text" class="form-control position-absolute" id="txtUserNic" style=""
+                       aria-describedby="emailHelp" placeholder="Enter user nic">
 
-                <label class="position-absolute label2" for="txtUserAddress">User Address</label>
-                <input aria-describedby="emailHelp" class="form-control position-absolute" id="txtUserAddress"
-                       placeholder="Enter user address"
-                       style="" type="text">
+                <label for="txtUserAddress" class="position-absolute label2">User Address</label>
+                <input type="text" class="form-control position-absolute" id="txtUserAddress" style=""
+                       aria-describedby="emailHelp" placeholder="Enter user address">
 
-                <label class="position-absolute label3" for="txtUserContact">User Contact</label>
-                <input aria-describedby="emailHelp" class="form-control position-absolute" id="txtUserContact"
-                       name="contact" placeholder="Enter user contact"
-                       style="" type="text">
+                <label for="txtUserContact" class="position-absolute label3">User Contact</label>
+                <input type="text" class="form-control position-absolute" id="txtUserContact" style=""
+                       aria-describedby="emailHelp" placeholder="Enter user contact">
 
-                <label class="position-absolute label5" for="txtUserEmail">User Email</label>
-                <input aria-describedby="emailHelp" class="form-control position-absolute" id="txtUserEmail"
-                       name="email" placeholder="Enter user contact"
-                       style="" type="text">
+                <label for="txtUserEmail" class="position-absolute label5">User Email</label>
+                <input type="text" class="form-control position-absolute" id="txtUserEmail" style=""
+                       aria-describedby="emailHelp" placeholder="Enter user contact">
 
-                <button class="btn btn-success position-absolute" id="save" type="button">Save</button>
-                <button class="btn btn-primary position-absolute" id="update" type="button">Update</button>
-                <button class="btn btn-warning position-absolute" id="loadAll" type="button">Load All</button>
-                <button class="btn btn-danger position-absolute" id="delete" type="button">Delete</button>
+                <button type="button" class="btn btn-success position-absolute" id="save">Save</button>
+                <button type="button" class="btn btn-primary position-absolute" id="update">Update</button>
+                <button type="button" class="btn btn-warning position-absolute" id="loadAll">Load All</button>
+                <button type="button" class="btn btn-danger position-absolute" id="delete">Delete</button>
 
                 <table class="table position-absolute table-primary text-center table-bordered" id="table">
                     <thead>
@@ -149,6 +140,7 @@
 
                     </tbody>
                 </table>
+
             </form>
         </div>
     </form>
@@ -156,7 +148,7 @@
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/jquery-3.6.0.min.js"></script>
 <script>
-    var baseURL = "http://localhost:8080/Car_Rental_API_war/guest";
+    var baseURL = "http://localhost:8080/Car_Rental_API_war/register";
 
     $("#id").click(function () {
         searchUser();
@@ -185,14 +177,14 @@
             url: baseURL + "/" + userId,
             method: "GET",
             success: function (res) {
-                if (res.code = 200) {
-                    var guestUser = res.data;
-                    $("#txtUserId").val(guestUser.id);
-                    $("#txtUserName").val(guestUser.name);
-                    $("#txtUserNic").val(guestUser.nic);
-                    $("#txtUserAddress").val(guestUser.address);
-                    $("#txtUserContact").val(guestUser.contact);
-                    $("#txtUserEmail").val(guestUser.email);
+                if (res.code == 200) {
+                    var registerUser = res.data;
+                    $("#txtUserId").val(registerUser.id);
+                    $("#txtUserName").val(registerUser.name);
+                    $("#txtUserNic").val(registerUser.nic);
+                    $("#txtUserAddress").val(registerUser.address);
+                    $("#txtUserContact").val(registerUser.contact);
+                    $("#txtUserEmail").val(registerUser.email);
                 } else {
                     clearForm();
                 }
@@ -256,8 +248,8 @@
             url: baseURL,
             method: "GET",
             success: function (resp) {
-                for (const user of resp.data) {
-                    let row = `<tr><td>${guestUser.id}</td><td>${guestUser.name}</td><td>${guestUser.nic}</td><td>${guestUser.address}</td><td>${guestUser.contact}</td><td>${guestUser.email}</td></tr>`;
+                for (const registerUser of resp.data) {
+                    let row = `<tr><td>${registerUser.id}</td><td>${registerUser.name}</td><td>${registerUser.nic}</td><td>${registerUser.address}</td><td>${registerUser.contact}</td><td>${registerUser.email}</td></tr>`;
                     $("#vehicleTable").append(row);
                 }
                 bindClickEvents();

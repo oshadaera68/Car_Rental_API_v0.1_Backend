@@ -6,6 +6,16 @@
     color: #0a53be;
 }
 
+.register{
+    position: absolute;
+    left: 87vh;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
 #id {
     position: absolute;
     left: 2vh !important;

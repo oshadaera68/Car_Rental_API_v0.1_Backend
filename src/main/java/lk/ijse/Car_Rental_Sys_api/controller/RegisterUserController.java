@@ -30,7 +30,7 @@ public class RegisterUserController {
     @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseUtil updateRegUser(@RequestBody RegisterUserDto dto) {
         registerUserService.updateRegUser(dto);
-        return new ResponseUtil(200, "update admin", null);
+        return new ResponseUtil(200, "update User", null);
     }
 
     @GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
