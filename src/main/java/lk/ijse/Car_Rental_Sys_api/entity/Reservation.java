@@ -10,8 +10,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.*;
-import java.time.LocalDate;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -22,18 +22,9 @@ import java.time.LocalDate;
 public class Reservation {
     @Id
     private String resId;
-    private LocalDate date;
-    private int noOfDays;
+    private String registerDate;
+    private String returnDate;
+    private int numberOfDays;
+    private String cancellationDetails;
     private String pickUpDate;
-
-    //Out=verse in guestcustomer
-    @ManyToOne(cascade = {CascadeType.REFRESH,CascadeType.DETACH})
-    @JoinColumn(name = "guestId", referencedColumnName = "guestId", insertable = false, updatable = false)
-    private GuestUser guestuser;
-
-    //Out=verse in regcustomer
-    @ManyToOne(cascade = {CascadeType.REFRESH,CascadeType.DETACH})
-    @JoinColumn(name = "regId", referencedColumnName = "regId", insertable = false, updatable = false)
-    private RegisterUser regUser;
-
 }

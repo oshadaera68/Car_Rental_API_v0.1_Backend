@@ -9,7 +9,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import javax.persistence.*;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,21 +19,13 @@ import javax.persistence.*;
 @ToString
 
 @Entity
-@IdClass(OrderCar_PK.class)
 public class Rent {
     @Id
-    private String resid;
-    @Id
-    private String vid;
-    private String date;
-    private double unitprice;
-
-    //Out-Verse
-    @ManyToOne
-    @JoinColumn(name = "resid",referencedColumnName = "resid",insertable = false,updatable = false)
-    private Reservation reservation;
-    //Out-verse
-    @ManyToOne
-    @JoinColumn(name = "cId",referencedColumnName = "cId",insertable = false,updatable = false)
-    private Car car;
+    private String rentId;
+    private String paymentMethod;
+    private String paymentDate;
+    private int damagesCompensiation;
+    private double refund;
+    private double downPayment;
+    private double totalPayment;
 }
