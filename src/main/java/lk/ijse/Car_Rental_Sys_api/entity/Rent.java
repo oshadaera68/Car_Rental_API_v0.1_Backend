@@ -9,7 +9,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-
 import javax.persistence.*;
 
 @AllArgsConstructor
@@ -21,17 +20,18 @@ import javax.persistence.*;
 @IdClass(OrderCar_PK.class)
 public class Rent {
     @Id
-    private String rentId;
+    private String resid;
     @Id
-    private String id;
+    private String vid;
     private String date;
-    private double unitPrice;
+    private double unitprice;
 
+    //Out-Verse
     @ManyToOne
-    @JoinColumn(name = "resId",referencedColumnName = "resId",insertable = false,updatable = false)
+    @JoinColumn(name = "resid",referencedColumnName = "resid",insertable = false,updatable = false)
     private Reservation reservation;
-
+    //Out-verse
     @ManyToOne
-    @JoinColumn(name = "id",referencedColumnName = "id",insertable = false,updatable = false)
+    @JoinColumn(name = "cId",referencedColumnName = "cId",insertable = false,updatable = false)
     private Car car;
 }

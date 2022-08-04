@@ -22,15 +22,18 @@ import java.time.LocalDate;
 public class Reservation {
     @Id
     private String resId;
-    private LocalDate registerDate;
-    private int numberOfDays;
+    private LocalDate date;
+    private int noOfDays;
     private String pickUpDate;
 
+    //Out=verse in guestcustomer
     @ManyToOne(cascade = {CascadeType.REFRESH,CascadeType.DETACH})
-    @JoinColumn(name = "guestId",referencedColumnName = "guestId",insertable = false,updatable = false)
-    private GuestUser guestUser;
+    @JoinColumn(name = "guestId", referencedColumnName = "guestId", insertable = false, updatable = false)
+    private GuestUser guestuser;
 
+    //Out=verse in regcustomer
     @ManyToOne(cascade = {CascadeType.REFRESH,CascadeType.DETACH})
-    @JoinColumn(name = "registrationId",referencedColumnName = "registrationId",insertable = false,updatable = false)
-    private RegisterUser registerUser;
+    @JoinColumn(name = "regId", referencedColumnName = "regId", insertable = false, updatable = false)
+    private RegisterUser regUser;
+
 }

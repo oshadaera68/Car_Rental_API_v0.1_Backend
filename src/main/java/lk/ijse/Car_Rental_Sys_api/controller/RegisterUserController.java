@@ -33,6 +33,12 @@ public class RegisterUserController {
         return new ResponseUtil(200, "update User", null);
     }
 
+    @DeleteMapping(params = {"id"}, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil deleteRegUser(@RequestParam String id) {
+        registerUserService.deleteRegUser(id);
+        return new ResponseUtil(200, "delete User", null);
+    }
+
     @GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseUtil searchRegUser(@PathVariable String id) {
         return new ResponseUtil(200, "OK", registerUserService.searchRegUser(id));

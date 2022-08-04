@@ -257,7 +257,7 @@
             method: "GET",
             success: function (resp) {
                 for (const vehicle of resp.data) {
-                    let row = `<tr><td>${car.id}</td><td>${car.name}</td><td>${car.transmissionType}</td><td>${car.fuelType}</td><td>${car.noOfPassengers}</td><td>${car.brand}</td></tr>`;
+                    let row = `<tr><td>${vehicle.id}</td><td>${vehicle.name}</td><td>${vehicle.transmissionType}</td><td>${vehicle.fuelType}</td><td>${vehicle.noOfPassengers}</td><td>${vehicle.brand}</td></tr>`;
                     $("#vehicleTable").append(row);
                 }
                 bindClickEvents();
