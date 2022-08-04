@@ -1,7 +1,7 @@
 package lk.ijse.Car_Rental_Sys_api.controller;
 
 import lk.ijse.Car_Rental_Sys_api.dto.ReservationDto;
-import lk.ijse.Car_Rental_Sys_api.service.ReservationService;
+import lk.ijse.Car_Rental_Sys_api.service.PlaceOrderReservationService;
 import lk.ijse.Car_Rental_Sys_api.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("reservation")
 @CrossOrigin
-public class ReservationController {
+public class PlaceOrderReservationController {
     @Autowired
-    ReservationService reservationService;
+    PlaceOrderReservationService reservationService;
 
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.CREATED)
