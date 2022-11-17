@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Car_Rental_API" />
+        <module name="Car_Rental_API_v0.1_Backend" />
       </profile>
     </annotationProcessing>
   </component>
